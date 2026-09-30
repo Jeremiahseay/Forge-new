@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="Forge Fitness">
+<link rel="stylesheet" href="styles.css">
+<title>Forge Fitness</title>
+</head>
+<body>
+<div id="app">
+<header class="topbar"><div><div class="eyebrow">FORGE FITNESS</div><h1 id="pageTitle">Today</h1></div><select id="profileSelect" aria-label="Active profile"><option value="me">Me</option><option value="fiancee">Fiancée</option></select></header>
+<main id="view"></main>
+<nav class="bottomnav" aria-label="Main navigation">
+<button data-route="home">Today</button><button data-route="train">Train</button><button data-route="knowledge">Knowledge</button><button data-route="baseline">Baseline</button><button data-route="bodytype">Body Type</button><button data-route="bodyshape">Body Shape</button><button data-route="scan">3D Scan</button><button data-route="goals">Goals</button><button data-route="review">Review</button>
+</nav></div>
+<script>
+(async()=>{try{if("serviceWorker" in navigator){const regs=await navigator.serviceWorker.getRegistrations();for(const r of regs)await r.unregister();}if(window.caches){const ks=await caches.keys();for(const k of ks)await caches.delete(k);}}catch(e){console.warn("cache cleanup",e)}})();
+</script><script src="data.js"></script><script src="app.js"></script>
+</body></html>
